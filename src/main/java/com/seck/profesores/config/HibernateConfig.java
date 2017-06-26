@@ -31,7 +31,7 @@ public class HibernateConfig {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/tests");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/test");
 		dataSource.setUsername("test");
 		dataSource.setPassword("test");
 		
@@ -41,7 +41,7 @@ public class HibernateConfig {
 	public Properties hibernateProperties() {
 		
 		Properties properties = new Properties();
-		properties.put("hibernate.dialect", "hibernate.dialect");
+		properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 		properties.put("show_sql", "true");
 		
 		return properties;		

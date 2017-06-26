@@ -1,15 +1,12 @@
 package com.seck.profesores.dao.impl;
 
 import java.util.List;
-import static org.hamcrest.CoreMatchers.instanceOf;
 
 import com.seck.profesores.dao.AbstractSession;
-import com.seck.profesores.dao.CourseDao;
 import com.seck.profesores.dao.SocialMediaDao;
-import com.seck.profesores.model.Course;
 import com.seck.profesores.model.SocialMedia;
-import com.seck.profesores.model.Teacher;
 import com.seck.profesores.model.TeacherSocialMedia;
+
 
 public class SocialMediaDaoImpl extends AbstractSession implements SocialMediaDao {
 
